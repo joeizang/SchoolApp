@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="SchoolApp.Views.SchoolAppMasterDetail"
+                  xmlns:local="clr-namespace:SchoolApp.Views;assembly=SchoolApp"
+                  >
+    <MasterDetailPage.Master>
+        <local:MenuPage x:Name="menuPage" />
+    </MasterDetailPage.Master>
+
+    <!--<MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>-->
+</MasterDetailPage>
+
+<!--<ContentPage Title="Menu">
+    <StackLayout BackgroundColor="#2196F3" Padding="20" VerticalOptions="FillAndExpand">
+
+        <Button Text="Home"
+                    TextColor="White"
+                    BackgroundColor="#2196F3" BorderRadius="5" BorderColor="#2196F3"
+                    Command="{Binding OnNavigateCommand}"
+                    CommandParameter="NavigationPage/MainPage" />
+
+        <Button Text="Courses"
+                    TextColor="White"
+                    BackgroundColor="#2196F3" BorderRadius="5" BorderColor="#2196F3"
+                    Command="{Binding OnNavigateCommand}"
+                    CommandParameter="NavigationPage/Courses" />
+
+        <Button Text="Registration"
+                    TextColor="White"
+                    BackgroundColor="#2196F3" BorderRadius="5" BorderColor="#2196F3"
+                    Command="{Binding OnNavigateCommand}"
+                    CommandParameter="NavigationPage/Registration" />
+    </StackLayout>
+</ContentPage>-->

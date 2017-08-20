@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SchoolApp.Views.MainPage"
-             xmlns:local="clr-namespace:SchoolApp.Views"
-             Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="MainPage" TextColor="DarkGreen"/>
+             x:Class="SchoolApp.Views.Courses"
+             Title="Courses Page"
+             >
+
+    <StackLayout>
+        <Label Text="List of Courses Offered by A Student"/>
     </StackLayout>
+  
 </ContentPage>
