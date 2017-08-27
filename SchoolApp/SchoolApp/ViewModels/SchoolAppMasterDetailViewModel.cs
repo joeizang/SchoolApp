@@ -24,5 +24,7 @@ namespace SchoolApp.ViewModels
         {
             await _navigationService.NavigateAsync(new Uri(obj, UriKind.Relative));
         }
+
+
     }
 }

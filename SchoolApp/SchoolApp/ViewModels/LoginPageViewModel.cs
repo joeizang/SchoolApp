@@ -58,7 +58,7 @@ namespace SchoolApp.ViewModels
 
             await Task.Delay(2000);
 
-            await _navigationService.NavigateAsync("SchoolAppMasterDetail/NavigationPage/MainPage");
+            await _navigationService.NavigateAsync(new Uri("SchoolAppMasterDetail/NavigationPage/MainPage", UriKind.Absolute));
 
 
             IsBusy = false;
@@ -69,17 +69,17 @@ namespace SchoolApp.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

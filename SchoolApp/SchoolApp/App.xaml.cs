@@ -1,5 +1,6 @@
 ﻿using Prism.Unity;
 using SchoolApp.Views;
+using System;
 using Xamarin.Forms;
 
 namespace SchoolApp
@@ -14,18 +15,20 @@ namespace SchoolApp
 
             //NavigationService
             //    .NavigateAsync(new Uri("/SchoolAppMasterDetail/NavigationPage/MainPage",UriKind.Absolute));
-            NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            NavigationService.NavigateAsync(new Uri("/NavigationPage/LoginPage",UriKind.Absolute));
         }
 
         protected override void RegisterTypes()
         {
+            Container.RegisterTypeForNavigation<AppNavigationPage>("NavigationPage");
             Container.RegisterTypeForNavigation<SchoolAppMasterDetail>();
             Container.RegisterTypeForNavigation<LoginPage>();
-            Container.RegisterTypeForNavigation<NavigationPage>();
+            //Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<Courses>();
             Container.RegisterTypeForNavigation<Registration>();
             Container.RegisterTypeForNavigation<MenuPage>();
+            
         }
     }
 }

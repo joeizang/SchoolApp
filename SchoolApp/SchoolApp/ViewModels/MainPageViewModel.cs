@@ -16,9 +16,11 @@ namespace SchoolApp.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainPageViewModel()
-        {
+        private INavigationService _navigationService;
 
+        public MainPageViewModel(INavigationService navigationService)
+        {
+            _navigationService = navigationService;
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

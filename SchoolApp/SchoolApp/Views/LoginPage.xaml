@@ -21,9 +21,9 @@
                 FontSize="Medium" 
                 FontAttributes="Bold"
                 BackgroundColor="DarkBlue"
-                BorderRadius="3"/>
-                <!--Command="{Binding LoginCommand}"-->
-        
+                BorderRadius="3"
+                Command="{Binding LoginCommand}"
+        />
     </StackLayout>
   
 </ContentPage>
