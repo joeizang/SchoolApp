@@ -13,7 +13,7 @@ namespace SchoolApp
 
             //NavigationService
             //    .NavigateAsync(new Uri("/SchoolAppMasterDetail/NavigationPage/MainPage",UriKind.Absolute));
-            NavigationService.NavigateAsync("/NavigationPage/LoginPage",null,true,true);
+            NavigationService.NavigateAsync("/LoginPage",null,true,true);
         }
 
         protected override void RegisterTypes()
