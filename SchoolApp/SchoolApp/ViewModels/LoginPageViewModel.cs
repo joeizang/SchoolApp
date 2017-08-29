@@ -2,7 +2,7 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
-using System.Threading.Tasks;
+using System;
 
 namespace SchoolApp.ViewModels
 {
@@ -55,9 +55,9 @@ namespace SchoolApp.ViewModels
 
             await _dialogService.DisplayAlertAsync("Success", "Your login was successful", "Ok","Back");
 
-            await Task.Delay(2000);
+            //await Task.Delay(2000);
 
-            await _navigationService.NavigateAsync("SchoolAppMasterDetail/NavigationPage/MainPage");
+            await _navigationService.NavigateAsync(new Uri("/SchoolAppMasterDetail/NavigationPage/MainPage",UriKind.Absolute));
 
 
             IsBusy = false;
